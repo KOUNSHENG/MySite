@@ -3,7 +3,7 @@ from fastapi.responses import HTMLResponse
 from fastapi.responses import FileResponse
 from pathlib import Path
 
-path = Path("server_response/files/index.html")
+path = Path("index.html")
 
 app = FastAPI()
 
@@ -52,7 +52,7 @@ app = FastAPI()
     "/link",
 )
 def root():
-    return FileResponse("server_response/files/file.html")
+    return FileResponse("index.html")
 
 
 @app.get("/ai")
