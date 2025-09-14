@@ -57,7 +57,7 @@ def root():
 
 @app.get("https://kounsheng.github.io/MySite/ai")
 def ai_page():
-    return FileResponse("server_response/files/pages/page_ai.html")
+    return FileResponse("page_ai.html")
 
 
 @app.get("/quantum")
