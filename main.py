@@ -3,7 +3,7 @@ from fastapi.responses import HTMLResponse
 from fastapi.responses import FileResponse
 from pathlib import Path
 
-path = Path("server_response/files/file.html")
+path = Path("server_response/files/index.html")
 
 app = FastAPI()
 
